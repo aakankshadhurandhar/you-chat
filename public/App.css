@@ -295,11 +295,19 @@ body {
   --anchor-color: #0033cc;
 }
 
-body.dark-theme {
-  --text-color: #eee;
-  --bkg-color: #121212;
-  --anchor-color: #809fff;
+body.dark-theme{
+  --text-color:blue;
 }
 a {
   color: var(--anchor-color);
+}
+.nav-brand{
+  background-color:#4C1D95;
+  display:flex;
+  font-size: 2rem;
+  color: white;
+}
+.signout-btn{
+  color: black;
+  background-color:#4C1D95;
 }

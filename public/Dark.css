@@ -173,6 +173,7 @@
     overflow: hidden;
     border-radius: 6px;
     background-color: #BB75FC;
+    color: black;
   }
 
   .message-input {
@@ -295,3 +296,13 @@
     opacity: 1;
     right: 0;
   } 
+  .nav-brand{
+    background-color:#4C1D95;
+    color:white;
+    display: flex;
+    font-size: 2rem;
+  }
+  .signout-btn{
+    color: white;
+    background-color:#4C1D95;
+  }

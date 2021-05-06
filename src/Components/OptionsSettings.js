@@ -4,15 +4,7 @@ import { Button, deleteChat } from 'react-chat-engine'
 
 import { LeftOutlined, DownOutlined } from '@ant-design/icons'
 
-/*implement a logout function simply by clearing username/password stored in localstorage + reload the page to LoginForm */
-function handleClick() {
-    localStorage.clear();
-    window.location.reload();
-}
-function changeTheme(){
-    const theme= document.querySelector("#theme-link");
-    theme.getAttribute("href") === "Dark.css"? theme.href ="App.css" : theme.href = "Dark.css";
-}
+
 const OptionsSettings = props => {
     const [state, setState] = useState({
         collapsed: true,
@@ -52,21 +44,7 @@ const OptionsSettings = props => {
                         onClick={() => deleteChat(props, props.id, (data) => {})}
                         style={{ width: '100%', marginBottom: '12px' }}
                     />
-                    <Button 
-                        value="Log Out" 
-                        theme='danger'
-                        id='ce-delete-chat-button'
-                        onClick={handleClick}
-                        style={{ width: '100%', marginBottom: '12px' }}
-                    />
-                    <Button 
-                        class="btn-toggle"
-                        value="Dark theme" 
-                        theme='danger'
-                        id='ce-delete-chat-button'
-                        onClick={changeTheme}
-                        style={{ width: '100%', marginBottom: '12px' }}
-                    />
+                    
                 </div>
             }
         </div>
