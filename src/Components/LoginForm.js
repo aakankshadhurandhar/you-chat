@@ -28,6 +28,10 @@ const Modal = () => {
 
   return (
     <div className="wrapper">
+      username1:test
+      password:test<br/>
+      username2:test1
+      password:test1
       <div className="form">
         <h1 className="title">Chat Application</h1>
         <form onSubmit={handleSubmit}>
